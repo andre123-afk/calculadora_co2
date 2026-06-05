@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoMarket - Inicio</title>
+
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <section class="seccion-calculadora">
+        <div class="calculadora-card">
+            
+            <div class="card-header">
+                <div class="header-logo">
+                    <span class="icon-tree"></span>
+                    <span>C'andalerl</span>
+                </div>
+                <button class="close-btn">&times;</button>
+            </div>
+    
+            <div class="card-body">
+                <h2>Calculadora de Huella de Carbono</h2>
+                
+                <form action="resultado.html" method="GET">
+                    
+                    <div class="input-group">
+                        <input type="number" name="energia-kwh" placeholder="Emisiones de Energía (kWh)" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <input type="number" name="energia-base" placeholder="Energía" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <select name="tipo-transporte" required>
+                            <option value="" disabled selected>Selecciona tu tipo de transporte</option>
+                            <option value="carro">Carro particular (Gasolina)</option>
+                            <option value="autobus">Autobús público / Busetas</option>
+                            <option value="moto">Motocicleta</option>
+                            <option value="bici-pie">Bicicleta / Caminar (Cero Emisiones)</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="number" name="transporte-km" placeholder="Distancia recorrida (km)" required>
+                        <div class="check-icon"></div>
+                    </div>
+                    
+                    <button type="submit" class="btn-calcular">Calcular</button>
+                    
+                    <button type="button" class="btn-actualizar">Actualizar Información</button>
+                </form>
+    
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

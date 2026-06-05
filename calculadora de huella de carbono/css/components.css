@@ -1,0 +1,173 @@
+.calculadora-card {
+    background-color: var(--bg-card);
+    width: 100%;
+    max-width: 460px;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+.card-header {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 500;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.1rem;
+}
+.icon-tree {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.icon-tree::after {
+    content: '🌲';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+}
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+.card-body {
+    padding: 24px;
+}
+
+.card-body h2 {
+    margin: 0 0 20px 0;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.input-group {
+    position: relative;
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    color: #333333;
+}
+
+.input-group input::placeholder {
+    color: var(--placeholder-color);
+}
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    background-color: transparent;
+    box-sizing: border-box;
+    outline: none;
+    color: #333333;
+    appearance: none; 
+    -webkit-appearance: none;
+}
+.check-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon::after {
+    content: '';
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    margin-bottom: 2px;
+}
+.category-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #111111;
+    margin: 16px 0 8px 0;
+    display: block;
+}
+.btn-calcular {
+    width: 100%;
+    background-color: var(--primary-green);
+    color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-actualizar {
+    width: auto;
+    background-color: var(--light-green);
+    color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    margin-top: 12px;
+}
+.resultado-destacado {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.unidad {
+    font-size: 1.1rem;
+    color: #555;
+    display: block;
+    text-align: center;
+    font-weight: normal;
+}
+
+.mensaje-ecologico {
+    text-align: center;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+}

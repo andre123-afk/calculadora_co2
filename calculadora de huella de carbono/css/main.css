@@ -1,0 +1,25 @@
+:root {
+    --primary-green: #3B7A3E;
+    --light-green: #4D934F;
+    --dark-green: #29572C;
+    --bg-card: #FAF9F5;
+    --border-color: #333333;
+    --text-color: #000000;
+    --placeholder-color: #888888;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url(../img/fondo/fondo-CAL.jpeg);
+}
+.seccion-calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); 
+    padding: 40px 20px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
+                url('../img/fondo-bosque.jpg') no-repeat center center;
+    background-size: cover;
+    box-sizing: border-box;
+}
